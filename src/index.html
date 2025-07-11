@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>Expense Tracker</title>
 </head>
 <body>
-    <h1 class="text-center text-blue-400 font-semibold text-8xl">Hello, World!</h1>
+    <div class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-4"">
+        <div class="max-w-6xl mx-auto space-y-6">
+            <div class="text-center space-y-2">
+                <h1 class="text-4xl font-bold text-slate-800 flex items-center justify-center gap-3">
+                    <i class="pt-1 h-10 w-10 text-indigo-600 fa-solid fa-wallet"></i>
+                    Expense Tracker
+                </h1>
+                <p class="text-slate-600">Take control of your finances</p>
+            </div>
+
+            <div class="flex gap-6">
+                <div class="w-[368px] h-[132px] rounded-lg bg-gradient-to-r from-indigo-500 to-indigo-600 text-white border-0 shadow-lg">
+                    <div class="p-6 flex flex-row items-center justify-between space-y-0 pb-2">
+                        <h3 class="tracking-tight text-sm font-medium opacity-90">Total Balance</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 opacity-90"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="text-3xl font-bold">
+                            $2,670.00
+                        </div>
+                        <p class="text-xs opacity-90 mt-1">You're doing great!</p>
+                    </div>
+                </div>
+
+                <div class="w-[368px] h-[132px] rounded-lg bg-gradient-to-r from-emerald-500 to-emerald-600 text-white border-0 shadow-lg">
+                    <div class="p-6 flex flex-row items-center justify-between space-y-0 pb-2">
+                        <h3 class="tracking-tight text-sm font-medium opacity-90">Total Income</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-4 w-4 opacity-90"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="text-3xl font-bold">
+                            $4,000.00
+                        </div>
+                        <p class="text-xs opacity-90 mt-1">Money coming in</p>
+                    </div>
+                </div>
+
+                <div class="w-[368px] h-[132px] rounded-lg bg-gradient-to-r from-rose-500 to-rose-600 text-white border-0 shadow-lg">
+                    <div class="p-6 flex flex-row items-center justify-between space-y-0 pb-2">
+                        <h3 class="tracking-tight text-sm font-medium opacity-90">Total Expenses</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down h-4 w-4 opacity-90"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="text-3xl font-bold">
+                            $1,330.00
+                        </div>
+                        <p class="text-xs opacity-90 mt-1">Money going out</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
